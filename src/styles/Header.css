@@ -1,0 +1,54 @@
+header.main-header {
+    background-color: black;
+    border: rgb(105, 107, 108) 0.5px solid;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-self: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 40px;
+}
+
+div.navs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 700px;
+}
+
+button.nav-button {
+    color: aliceblue;
+    font-family: "Bitcount", Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+button.nav-button:hover {
+    transform: scale(1.2);
+}
+
+header > button > img {
+    width: 25px;
+    transition: 0.15s;
+}
+
+header > button > img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 10px 100px rgba(173, 173, 173, 0.7);
+}
