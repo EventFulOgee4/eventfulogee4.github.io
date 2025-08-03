@@ -8,7 +8,7 @@ export default function Header(props){
         <section id="header">
             <header className="main-header">
                 <button onClick={props.scrollToIntro} id="icon-logo">
-                    <img src="/cleaned_logo.png" alt="logo"/>
+                    <img src="cleaned_logo.png" alt="logo"/>
                 </button>
                 <div className="navs">
                     <button onClick={props.scrollToAbout} className="nav-button">
