@@ -52,6 +52,24 @@ export default function Skills(props){
                             <i><img className="kaplay-logo" src="kaplay-logo.png" alt="html-logo"/></i>
                         </div>
                     </section>
+                    <section className="devtools-list">
+                        <li>Developers Tools: </li>
+                        <div className="lang-cotntainer">
+                            <p>GIT</p>
+                        </div>
+                        <div className="lang-cotntainer">
+                            <p>VSCODE</p>
+                        </div>
+                        <div className="lang-cotntainer">
+                            <p>DOCKER</p>
+                        </div>
+                        <div className="lang-cotntainer">
+                            <p>ECLIPSE</p>
+                        </div>
+                        <div className="lang-cotntainer">
+                            <p>INTELLIJ</p>
+                        </div>
+                    </section>
                 </ul>
             </section>
         </section>
