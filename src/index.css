@@ -177,6 +177,14 @@ ul > section.fram-list {
     gap: 25px;
 }
 
+ul > section.devtools-list {
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
 img.nodejs-logo {
     width: 80px;
     transition: 0.15s ease;
