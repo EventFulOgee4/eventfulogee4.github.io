@@ -58,23 +58,23 @@ export default function Skills(props){
                         <li>Developers Tools: </li>
                         <div className="lang-cotntainer">
                             <p>GIT</p>
-                            <i><img className="kaplay-logo" src="git-logo.svg" alt="git-logo"/></i>
+                            <i><img className="lang-logo" src="git-logo.svg" alt="git-logo"/></i>
                         </div>
                         <div className="lang-cotntainer">
                             <p>VSCODE</p>
-                            <i><img className="kaplay-logo" src="vscode-logo.svg" alt="vscode-logo"/></i>
+                            <i><img className="lang-logo" src="vscode-logo.svg" alt="vscode-logo"/></i>
                         </div>
                         <div className="lang-cotntainer">
                             <p>DOCKER</p>
-                            <i><img className="kaplay-logo" src="docker-logo.svg" alt="docker-logo"/></i>
+                            <i><img className="lang-logo" src="docker-logo.svg" alt="docker-logo"/></i>
                         </div>
                         <div className="lang-cotntainer">
                             <p>ECLIPSE</p>
-                            <i><img className="kaplay-logo" src="eclipse-logo.svg" alt="eclipse-logo"/></i>
+                            <i><img className="lang-logo" src="eclipse-logo.svg" alt="eclipse-logo"/></i>
                         </div>
                         <div className="lang-cotntainer">
                             <p>INTELLIJ</p>
-                            <i><img className="kaplay-logo" src="intellij-logo.svg" alt="intellij-logo"/></i>
+                            <i><img className="lang-logo" src="intellij-logo.svg" alt="intellij-logo"/></i>
                         </div>
                     </section>
                 </ul>
