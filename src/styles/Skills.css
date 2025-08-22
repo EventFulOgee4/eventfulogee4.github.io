@@ -60,6 +60,7 @@ ul > section.fram-list {
     display: flex;
     align-items: center;
     gap: 25px;
+    margin-bottom: 40px;
 }
 
 ul > section.devtools-list {
