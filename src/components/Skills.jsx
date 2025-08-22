@@ -1,3 +1,5 @@
+import "../styles/Skills.css"
+
 export default function Skills(props){
     return(
         <section ref={props.skillsSection} className="skills-section">
