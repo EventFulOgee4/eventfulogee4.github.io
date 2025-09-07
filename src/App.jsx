@@ -6,6 +6,7 @@ import Experience from "./components/Experience"
 import Education from "./components/Education"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import React from "react"
 
 export default function App () {
@@ -100,9 +101,7 @@ export default function App () {
       <Education educationSection={educationSection} />
       <Projects projectsSection={projectsSection} />
       <Contact contactSection={contactSection} />
-        <section>
-            <p className="footer-text">By Javad Mammadaliyev - 2025</p>
-        </section>
+      <Footer/>
     </>
   )
 }
