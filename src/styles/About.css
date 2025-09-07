@@ -1,0 +1,40 @@
+section.about-section {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+header.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 0 auto;
+    width: 1000px;
+    border: 3px black solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+section.main-about {
+    margin-left: 180px;
+}
+
+section.main-about > h2 {
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 30px;
+}
+
+section.main-about > h3 {
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 20px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.main-about > h3 > span {
+    margin-bottom: 15px;
+}

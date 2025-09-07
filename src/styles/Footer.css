@@ -1,0 +1,7 @@
+section > p.footer-text {
+    margin-left: 650px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(234, 227, 227);
+    text-shadow: 1px 1px 20px rgb(159, 153, 153);  
+}
