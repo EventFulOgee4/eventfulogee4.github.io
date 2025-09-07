@@ -1,3 +1,5 @@
+import '../styles/Experience.css'
+
 export default function Experience(props){
     return(
         <section ref={props.experienceSection} className="experience-section">

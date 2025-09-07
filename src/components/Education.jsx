@@ -1,3 +1,5 @@
+import '../styles/Education.css'
+
 export default function Education(props){
     return(
         <section ref={props.educationSection} className="education-section">

@@ -1,3 +1,5 @@
+import '../styles/Intro.css'
+
 export default function Intro(props){
 
     return (

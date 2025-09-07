@@ -1,3 +1,5 @@
+import '../styles/Contact.css'
+
 export default function Contact(props){
     return(
         <section ref={props.contactSection} className="contact-section">

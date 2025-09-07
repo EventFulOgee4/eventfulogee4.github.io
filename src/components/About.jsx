@@ -1,3 +1,5 @@
+import '../styles/About.css'
+
 export default function About(props){
     return (
         <section ref={props.aboutSection} className="about-section">

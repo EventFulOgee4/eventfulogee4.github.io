@@ -1,3 +1,5 @@
+import "../styles/Projects.css"
+
 export default function Projects(props){
     return(
         <section ref={props.projectsSection} className="projects-section">
