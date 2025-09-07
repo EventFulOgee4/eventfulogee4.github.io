@@ -26,7 +26,42 @@ div.navs {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 700px;
+}
+
+@media (min-width: 320px) {
+    div.navs {
+        margin-left: 170px;
+    }
+}
+
+@media (min-width: 768px) {
+    div.navs {
+        margin-left: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div.navs {
+        margin-left: 700px;
+    }
+}
+
+@media (min-width: 1920px) {
+    div.navs {
+        margin-left: 1400px;
+    }
+}
+
+@media (min-width: 2560px) {
+    div.navs {
+        margin-left: 1650px;
+    }
+}
+
+@media (min-width: 3840px) {
+    div.navs {
+        margin-left: 2200px;
+    }
 }
 
 button.nav-button {
