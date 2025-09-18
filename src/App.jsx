@@ -8,6 +8,7 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import React from "react"
+import ParticlesComponent from "./components/particles"
 
 export default function App () {
 
@@ -85,6 +86,7 @@ export default function App () {
 
   return (
     <>
+      <ParticlesComponent id = "particles" />
       <Header 
       scrollToIntro={scrollToIntro}
       scrollToAbout={scrollToAbout}
