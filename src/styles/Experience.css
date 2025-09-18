@@ -2,7 +2,7 @@ section.experience-section{
     margin-bottom: 80px;
 }
 
-@media(min-width: 1600px){
+@media(max-width: 1600px){
     div.internship-container > h2 {
         font-size: 2.5rem;
         margin-bottom: 25px;
@@ -18,7 +18,7 @@ section.experience-section{
     }
 }
 
-@media(min-width: 1600px){
+@media(max-width: 1600px){
         div.position-container > h3 {
         margin-left: 200px;
         font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -38,22 +38,21 @@ section.experience-section{
     }
 }
 
-@media(min-width: 320px){
+@media(max-width: 500px){
     div.experience-summary {
         display: flex;
         flex-wrap: wrap;
-        max-width: 150px;
         font-size: 1.2rem;
         margin-left: 600px;
     }
 }
 
-@media(min-width: 1600px){
+@media(max-width: 1600px){
     div.experience-summary {
         display: flex;
         flex-wrap: wrap;
+        font-size: 1.2rem;
         max-width: 1000px;
-        font-size: 1.2rem;
         margin-left: 200px;
     }
 }
