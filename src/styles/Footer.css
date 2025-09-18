@@ -6,7 +6,7 @@ section > p.footer-text {
     text-shadow: 1px 1px 20px rgb(159, 153, 153);  
 }
 
-@media(min-width: 2560px){
+@media(min-width: 2400px){
     section > p.footer-text {
         margin-left: 1190px;
         font-family: "Inter", Arial, Helvetica, sans-serif;

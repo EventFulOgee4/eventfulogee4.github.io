@@ -2,7 +2,7 @@ section.experience-section{
     margin-bottom: 80px;
 }
 
-@media(max-width: 1600px){
+@media(min-width: 1200px){
     div.internship-container > h2 {
         font-size: 2.5rem;
         margin-bottom: 25px;
@@ -10,7 +10,7 @@ section.experience-section{
     }
 }
 
-@media(min-width: 2560px){
+@media(min-width: 2400px){
     div.internship-container > h2 {
         font-size: 2.5rem;
         margin-bottom: 25px;
@@ -18,7 +18,7 @@ section.experience-section{
     }
 }
 
-@media(max-width: 1600px){
+@media(min-width: 1200px){
         div.position-container > h3 {
         margin-left: 200px;
         font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -28,7 +28,7 @@ section.experience-section{
     }
 }
 
-@media(min-width: 2560px){
+@media(min-width: 2400px){
         div.position-container > h3 {
         margin-left: 600px;
         font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -47,7 +47,7 @@ section.experience-section{
     }
 }
 
-@media(max-width: 1600px){
+@media(min-width: 1200px){
     div.experience-summary {
         display: flex;
         flex-wrap: wrap;
@@ -57,7 +57,7 @@ section.experience-section{
     }
 }
 
-@media(min-width: 2560px){
+@media(min-width: 2400px){
     div.experience-summary {
         display: flex;
         flex-wrap: wrap;

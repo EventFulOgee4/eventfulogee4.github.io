@@ -14,14 +14,14 @@ section.contact-section > h1 {
     }
 }
 
-@media(min-width: 1600px){
+@media(min-width: 1200px){
     section.contact-section > h1 {
         font-size: 50px;
         margin-left: 40px;
     }
 }
 
-@media(min-width: 2560px){
+@media(min-width: 2400px){
     section.contact-section > h1 {
         font-size: 50px;
         margin-left: 40px;

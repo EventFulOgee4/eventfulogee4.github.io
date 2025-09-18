@@ -6,7 +6,7 @@ section.intro-section {
     justify-content: center;
 }
 
-@media (min-width: 2560px){
+@media (min-width: 2400px){
     section.intro-section {
         margin-left: 600px;
     }
@@ -33,7 +33,7 @@ section.intro-section {
     }
 }
 
-@media (min-width: 2560px){
+@media (min-width: 2400px){
     .info-container{
         max-width: 400px;
     }

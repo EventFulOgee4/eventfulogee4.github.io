@@ -46,21 +46,9 @@ div.navs {
     }
 }
 
-@media (min-width: 1920px) {
-    div.navs {
-        margin-left: 1400px;
-    }
-}
-
-@media (min-width: 2560px) {
+@media (min-width: 2400px) {
     div.navs {
         margin-left: 1650px;
-    }
-}
-
-@media (min-width: 3840px) {
-    div.navs {
-        margin-left: 2200px;
     }
 }
 

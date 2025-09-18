@@ -8,13 +8,13 @@ section.skills-section {
     }
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1200px){
     section.main-skills {
         margin-left: 150px;
     }
 }
 
-@media (min-width: 2560px){
+@media (min-width: 2400px){
     section.main-skills {
         margin-left: 550px;
     }

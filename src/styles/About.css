@@ -22,7 +22,7 @@ section.main-about {
     margin-left: 180px;
 }
 
-@media (min-width: 2560px){
+@media (min-width: 2400px){
     section.main-about{
         margin-left: 600px;
     }
@@ -34,7 +34,7 @@ section.main-about {
     }
 }
 
-@media (min-width: 2560px){
+@media (min-width: 2400px){
     section.main-about{
         margin-left: 600px;
     }
