@@ -42,7 +42,7 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push",
           },
           onHover: {
             enable: true,
@@ -77,7 +77,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 2,
+          speed: 5,
           straight: false,
         },
         number: {
@@ -93,7 +93,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 10, max: 3 },
         },
       },
       detectRetina: true,
