@@ -6,6 +6,12 @@ section.intro-section {
     justify-content: center;
 }
 
+@media (min-width: 2560px){
+    section.intro-section {
+        margin-left: 600px;
+    }
+}
+
 .name-container {
     max-width: 100px;
 }
@@ -15,8 +21,22 @@ section.intro-section {
     margin-bottom: 25px;
 }
 
-.info-container {
-    max-width: 400px;
+@media (min-width: 1200px){
+    .info-container{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 320px){
+    .info-container{
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 2560px){
+    .info-container{
+        max-width: 400px;
+    }
 }
 
 .info-container > h2 {

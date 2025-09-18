@@ -7,9 +7,9 @@ header.section-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 27px;
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     border: 3px black solid;
     border-radius: 15px;
     background-color: aliceblue;
@@ -20,6 +20,24 @@ header.section-header {
 
 section.main-about {
     margin-left: 180px;
+}
+
+@media (min-width: 2560px){
+    section.main-about{
+        margin-left: 600px;
+    }
+}
+
+@media (max-width: 500px){
+    section.main-about{
+        max-width: 150px;
+    }
+}
+
+@media (min-width: 2560px){
+    section.main-about{
+        margin-left: 600px;
+    }
 }
 
 section.main-about > h2 {

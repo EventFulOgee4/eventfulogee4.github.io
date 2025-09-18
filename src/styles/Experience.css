@@ -2,24 +2,68 @@ section.experience-section{
     margin-bottom: 80px;
 }
 
-div.internship-container > h2 {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-    margin-left: 200px;
+@media(min-width: 1600px){
+    div.internship-container > h2 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        margin-left: 200px;
+    }
 }
 
-div.position-container > h3 {
-    margin-left: 200px;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 1px rgb(234, 227, 227);
-    text-shadow: 1px 1px 20px rgb(159, 153, 153);  
+@media(min-width: 2560px){
+    div.internship-container > h2 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        margin-left: 600px;
+    }
 }
 
-div.experience-summary {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    font-size: 1.2rem;
-    margin-left: 200px;
+@media(min-width: 1600px){
+        div.position-container > h3 {
+        margin-left: 200px;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(234, 227, 227);
+        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
+    }
+}
+
+@media(min-width: 2560px){
+        div.position-container > h3 {
+        margin-left: 600px;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(234, 227, 227);
+        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
+    }
+}
+
+@media(min-width: 320px){
+    div.experience-summary {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 150px;
+        font-size: 1.2rem;
+        margin-left: 600px;
+    }
+}
+
+@media(min-width: 1600px){
+    div.experience-summary {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        font-size: 1.2rem;
+        margin-left: 200px;
+    }
+}
+
+@media(min-width: 2560px){
+    div.experience-summary {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        font-size: 1.2rem;
+        margin-left: 600px;
+    }
 }

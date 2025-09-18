@@ -5,3 +5,24 @@ section > p.footer-text {
     -webkit-text-stroke: 1px rgb(234, 227, 227);
     text-shadow: 1px 1px 20px rgb(159, 153, 153);  
 }
+
+@media(min-width: 2560px){
+    section > p.footer-text {
+        margin-left: 1190px;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(234, 227, 227);
+        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
+    }
+}
+
+@media(max-width: 500px){
+    section > p.footer-text {
+        margin-left: 300px;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(234, 227, 227);
+        text-shadow: 1px 1px 20px rgb(159, 153, 153);
+        max-width: 300px;  
+    }
+}
