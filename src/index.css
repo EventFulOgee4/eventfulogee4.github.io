@@ -23,6 +23,13 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+#particles{
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 ::selection {
     background-color: aliceblue;
     color: rgb(35, 34, 34);
