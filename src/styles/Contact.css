@@ -42,8 +42,13 @@ div.contact-method {
     align-items: center;
 }
 
-img.contact-logo {
+img.gmail-logo {
     width: 60px;
+    transition: 0.2s;
+}
+
+img.gmail-logo:hover {
+    transform: scale(1.2);
 }
 
 img.linkedin-logo {
