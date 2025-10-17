@@ -9,8 +9,10 @@ export default function Contact(props){
             <h1>Contact me &#128071;</h1>
             <section className="contact-info">
                 <div className="contact-method">
-                    <i><img className="contact-logo" src="Gmail_icon_(2020).svg" alt="gmail-logo"/></i>
-                    <p>cavadmamedaliev@gmail.com</p>
+                    <a href="mailto: cavadmamedaliev@gmail.com">
+                        <i><img className="gmail-logo" src="Gmail_icon_(2020).svg" alt="gmail-logo"/></i>
+                    </a>
+                    <p>Email Me!</p>
                 </div>
                 <div className="contact-method">
                     <a target="_blank" href="https://www.linkedin.com/in/javad-mammadaliyev-a00700334/">
