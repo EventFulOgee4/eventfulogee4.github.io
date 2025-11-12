@@ -2,9 +2,9 @@ section.skills-section {
     margin-bottom: 80px;
 }
 
-@media (min-width: 320px){
+@media (max-width: 500px){
     section.main-skills {
-        margin-left: 150px;
+        margin-left: 50px;
     }
 }
 
@@ -29,12 +29,25 @@ ul > section.lang-list {
     gap: 25px;
 }
 
+@media (max-width: 500px){
+    ul > section.lang-list {
+        font-size: 40px;
+    }
+}
+
 img.lang-logo {
     width: 40px;
     transition: 0.15s ease;
     cursor: pointer;
     position: relative;
 }
+
+@media (max-width: 500px) {
+    img.lang-logo {
+        width: 50px;
+
+    }
+} 
 
 img.lang-logo:hover {
     transform: scale(1.6);
@@ -77,6 +90,12 @@ ul > section.fram-list {
     margin-bottom: 40px;
 }
 
+@media (max-width: 500px){
+    ul > section.fram-list {
+        font-size: 40px;
+    }
+}
+
 ul > section.devtools-list {
     font-size: 30px;
     list-style: none;
@@ -85,11 +104,101 @@ ul > section.devtools-list {
     gap: 25px;
 }
 
+@media (max-width: 500px){
+    ul > section.devtools-list {
+        font-size: 40px;
+    }
+}
+
+img.git-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.git-logo {
+        width: 60px;
+    }
+}
+
+img.vscode-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.vscode-logo {
+        width: 60px;
+    }
+}
+
+img.docker-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.docker-logo {
+        width: 60px;
+    }
+}
+
+img.eclipse-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.eclipse-logo {
+        width: 60px;
+    }
+}
+
+img.intellij-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.intellij-logo {
+        width: 60px;
+    }
+}
+
+img.react-logo {
+    width: 40px;
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 500px){
+    img.react-logo {
+        width: 60px;
+    }
+}
+
 img.nodejs-logo {
     width: 80px;
     transition: 0.15s ease;
     cursor: pointer;
     position: relative;
+}
+
+@media (max-width: 500px){
+    img.nodejs-logo {
+        width: 100px;
+    }
 }
 
 img.nodejs-logo:hover {
@@ -101,6 +210,12 @@ img.kaplay-logo {
     transition: 0.15s ease;
     cursor: pointer;
     position: relative;
+}
+
+@media (max-width: 500px){
+    img.kaplay-logo {
+        width: 80px;
+    }
 }
 
 img.kaplay-logo:hover {
