@@ -12,6 +12,12 @@ section.intro-section {
     }
 }
 
+@media (max-width: 500px){
+    section.intro-section {
+        margin-left: 250px;
+    }
+}
+
 .name-container {
     max-width: 100px;
 }
@@ -27,9 +33,9 @@ section.intro-section {
     }
 }
 
-@media (min-width: 320px){
-    .info-container{
-        max-width: 700px;
+@media (max-width: 500px){
+    .info-container {
+        min-width: 400px;
     }
 }
 
