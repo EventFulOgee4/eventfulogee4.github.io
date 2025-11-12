@@ -7,7 +7,7 @@ export default function About(props){
                 ABOUT
             </header>
             <section className="main-about">
-                <h2>Hello World!</h2>
+                <h2>Hello World !</h2>
                 <h3>
                     <span>
                         My name is Javad, I'm a curious and driven problem-solver studying Computer Science at the University of Calgary, 
