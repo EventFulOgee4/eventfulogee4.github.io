@@ -18,6 +18,13 @@ header.section-header {
     margin-bottom: 80px;
 }
 
+@media (max-width: 500px){
+    header.section-header {
+        width: 700px;
+        margin-left: 80px;
+    }
+}
+
 section.main-about {
     margin-left: 180px;
 }
@@ -30,13 +37,8 @@ section.main-about {
 
 @media (max-width: 500px){
     section.main-about{
-        max-width: 150px;
-    }
-}
-
-@media (min-width: 2400px){
-    section.main-about{
-        margin-left: 600px;
+        min-width: 400px;
+        margin-left: 250px;
     }
 }
 
@@ -45,12 +47,24 @@ section.main-about > h2 {
     font-size: 30px;
 }
 
+@media (max-width: 500px){
+    section.main-about > h2{
+        font-size: 40px;
+    }
+}
+
 section.main-about > h3 {
     font-family: "Bitcount Prop Single", system-ui;
     font-size: 20px;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 500px){
+    section.main-about > h3{
+        font-size: 30px;
+    }
 }
 
 section.main-about > h3 > span {
