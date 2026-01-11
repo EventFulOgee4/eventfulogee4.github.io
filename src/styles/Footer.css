@@ -23,6 +23,7 @@ section > p.footer-text {
         color: transparent;
         -webkit-text-stroke: 1px rgb(234, 227, 227);
         text-shadow: 1px 1px 20px rgb(159, 153, 153);
-        max-width: 300px;  
+        max-width: 1000px; 
+        width: 400px; 
     }
 }
