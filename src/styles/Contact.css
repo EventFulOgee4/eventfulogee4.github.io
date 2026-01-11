@@ -10,7 +10,10 @@ section.contact-section > h1 {
 @media(max-width: 500px){
     section.contact-section > h1 {
         font-size: 50px;
-        margin-left: 80px;
+        margin-left: 250px;
+        max-width: 1000px;
+        width: 400px;
+        margin-bottom: 100px;
     }
 }
 
@@ -36,11 +39,41 @@ section.contact-info {
     gap: 50px;
 }
 
+@media(max-width: 500px){
+    section.contact-info {
+        display: flex;
+        margin-left: 400px;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+}
+
 div.contact-method {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+@media(max-width: 500px){
+    div.contact-method > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+@media(max-width: 500px){
+    div.contact-method > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
 
 img.gmail-logo {
     width: 60px;
