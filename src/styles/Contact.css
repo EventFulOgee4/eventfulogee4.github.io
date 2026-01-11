@@ -42,7 +42,7 @@ section.contact-info {
 @media(max-width: 500px){
     section.contact-info {
         display: flex;
-        margin-left: 400px;
+        margin-left: 450px;
         justify-content: center;
         align-items: center;
         gap: 120px;
