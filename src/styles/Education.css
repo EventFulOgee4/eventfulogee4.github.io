@@ -6,8 +6,9 @@ section.education-section {
     div.uni-container > h2 {
         font-size: 2.5rem;
         margin-bottom: 25px;
-        margin-left: 200px;
-        max-width: 150px;
+        margin-left: 250px;
+        max-width: 1000px;
+        width: 400px;
     }
 }
 
@@ -29,12 +30,13 @@ section.education-section {
 
 @media(max-width: 500px){
     div.major-container > h3 {
-        margin-left: 200px;
+        margin-left: 250px;
         font-family: "Inter", Arial, Helvetica, sans-serif;
         color: transparent;
         -webkit-text-stroke: 1px rgb(234, 227, 227);
         text-shadow: 1px 1px 20px rgb(159, 153, 153);
-        max-width: 150px;
+        max-width: 1000px;
+        width: 200px;
     }
 }
 
