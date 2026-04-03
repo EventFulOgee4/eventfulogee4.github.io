@@ -1,36 +1,52 @@
-* {
+/* ── Reset & base ── */
+*, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     font-family: "Bitcount", Arial, sans-serif;
     color: white;
-    height: 100vh;
+    background-color: #000;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-.animated-bg {
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(-45deg, black, #1a1a1a, #333333, #444444);
-  background-size: 700% 700%;
-  animation: gradientMove 10s ease infinite;
+/* ── Particles layer ── */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-#particles{
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
+/* ── Text selection ── */
 ::selection {
-    background-color: aliceblue;
-    color: rgb(35, 34, 34);
+    background-color: rgba(0, 255, 255, 0.25);
+    color: #fff;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33cccc;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
 }
