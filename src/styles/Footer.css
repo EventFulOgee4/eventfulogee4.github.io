@@ -1,29 +1,16 @@
-section > p.footer-text {
-    margin-left: 650px;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+footer.site-footer {
+    padding: 32px clamp(24px, 6vw, 80px);
+    border-top: 1px solid rgba(105, 107, 108, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+p.footer-text {
+    font-family: "Bitcount", Arial, sans-serif;
     color: transparent;
-    -webkit-text-stroke: 1px rgb(234, 227, 227);
-    text-shadow: 1px 1px 20px rgb(159, 153, 153);  
-}
-
-@media(min-width: 2400px){
-    section > p.footer-text {
-        margin-left: 1190px;
-        font-family: "Inter", Arial, Helvetica, sans-serif;
-        color: transparent;
-        -webkit-text-stroke: 1px rgb(234, 227, 227);
-        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
-    }
-}
-
-@media(max-width: 500px){
-    section > p.footer-text {
-        margin-left: 300px;
-        font-family: "Inter", Arial, Helvetica, sans-serif;
-        color: transparent;
-        -webkit-text-stroke: 1px rgb(234, 227, 227);
-        text-shadow: 1px 1px 20px rgb(159, 153, 153);
-        max-width: 1000px; 
-        width: 400px; 
-    }
+    -webkit-text-stroke: 1px rgba(180, 175, 175, 0.5);
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin: 0;
 }
