@@ -1,28 +1,32 @@
 import '../styles/Experience.css'
 
-export default function Experience(props){
-    return(
+export default function Experience(props) {
+    return (
         <section ref={props.experienceSection} className="experience-section">
-            <header className="section-header">
-                EXPERIENCE
-            </header>
-            <div className="internship-container">
-                    <h2>
-                        Kapital Bank
-                    </h2>
+            <header className="section-header">EXPERIENCE</header>
+            <div className="experience-card">
+                <div className="experience-header">
+                    <div>
+                        <h2 className="experience-company">Kapital Bank</h2>
+                        <h3 className="experience-role">Software Developer Intern</h3>
+                    </div>
+                    <span className="experience-date">2022</span>
                 </div>
-                <div className="position-container">
-                    <h3>Software Developer Intern</h3>
-                </div>
-                <div className="experience-summary">
-                    <h3>
-                        During my time as a Software Developer at Kapital Bank, I had the opportunity to work on real-world projects that contributed directly to the bank’s 
-                        digital infrastructure. I collaborated with a team of developers to design, implement, and maintain internal systems and customer-facing applications. 
-                        My role involved writing clean, efficient code, debugging issues, and ensuring the reliability and performance of our software solutions. 
-                        I gained hands-on experience with tools and technologies such as HTML, CSS, JAVASCRIPT, and ReactJS 
-                        and strengthened my skills in agile development, teamwork, and problem-solving in a fast-paced environment.
-                    </h3>
-                </div>
+                <ul className="experience-bullets">
+                    <li>
+                        Collaborated with a development team to build and maintain internal systems
+                        and customer-facing banking applications using React, JavaScript, HTML, and CSS.
+                    </li>
+                    <li>
+                        Wrote clean, efficient code and resolved bugs to ensure reliability and
+                        performance across production software solutions.
+                    </li>
+                    <li>
+                        Contributed to agile sprints — participating in code reviews, standups, and
+                        cross-functional collaboration in a fast-paced fintech environment.
+                    </li>
+                </ul>
+            </div>
         </section>
     )
 }

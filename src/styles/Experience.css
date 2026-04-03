@@ -1,90 +1,72 @@
-section.experience-section{
+section.experience-section {
     margin-bottom: 80px;
+    padding: 0 clamp(24px, 6vw, 80px);
+    box-sizing: border-box;
 }
 
-@media(max-width: 500px){
-    div.internship-container > h2 {
-        font-size: 2.5rem;
-        margin-bottom: 25px;
-        margin-left: 250px;
-        width: 400px;
-    }
+.experience-card {
+    max-width: 780px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 28px 32px;
+    background: rgba(0, 255, 255, 0.03);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media(min-width: 1200px){
-    div.internship-container > h2 {
-        font-size: 2.5rem;
-        margin-bottom: 25px;
-        margin-left: 200px;
-    }
+.experience-card:hover {
+    border-color: rgba(0, 255, 255, 0.45);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
 }
 
-@media(min-width: 2400px){
-    div.internship-container > h2 {
-        font-size: 2.5rem;
-        margin-bottom: 25px;
-        margin-left: 600px;
-    }
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 12px;
 }
 
-@media(max-width: 500px){
-        div.position-container > h3 {
-        margin-left: 250px;
-        font-size: 30px;
-        width: 400px;
-        font-family: "Inter", Arial, Helvetica, sans-serif;
-        color: transparent;
-        -webkit-text-stroke: 1px rgb(234, 227, 227);
-        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
-    }
+.experience-company {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin: 0 0 6px 0;
+    color: #fff;
 }
 
-@media(min-width: 1200px){
-        div.position-container > h3 {
-        margin-left: 200px;
-        font-family: "Inter", Arial, Helvetica, sans-serif;
-        color: transparent;
-        -webkit-text-stroke: 1px rgb(234, 227, 227);
-        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
-    }
+.experience-role {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(234, 227, 227, 0.8);
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    font-weight: normal;
 }
 
-@media(min-width: 2400px){
-        div.position-container > h3 {
-        margin-left: 600px;
-        font-family: "Inter", Arial, Helvetica, sans-serif;
-        color: transparent;
-        -webkit-text-stroke: 1px rgb(234, 227, 227);
-        text-shadow: 1px 1px 20px rgb(159, 153, 153);  
-    }
+.experience-date {
+    font-size: 0.85rem;
+    color: #33cccc;
+    font-family: "Bitcount", Arial, sans-serif;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    opacity: 0.75;
 }
 
-@media(max-width: 500px){
-    div.experience-summary > h3 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        font-size: 30px;
-        margin-left: 250px;
-    }
+.experience-bullets {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-@media(min-width: 1200px){
-    div.experience-summary {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.2rem;
-        max-width: 1000px;
-        margin-left: 200px;
-    }
+.experience-bullets > li {
+    font-size: clamp(0.9rem, 1.4vw, 1rem);
+    color: rgba(210, 210, 210, 0.9);
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media(min-width: 2400px){
-    div.experience-summary {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1000px;
-        font-size: 1.2rem;
-        margin-left: 600px;
-    }
+.experience-bullets > li::marker {
+    color: #33cccc;
 }
