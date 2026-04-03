@@ -1,223 +1,133 @@
 section.skills-section {
     margin-bottom: 80px;
+    padding: 0 clamp(24px, 6vw, 80px);
+    box-sizing: border-box;
 }
 
-@media (max-width: 500px){
-    section.main-skills {
-        margin-left: 50px;
-    }
-}
-
-@media (min-width: 1200px){
-    section.main-skills {
-        margin-left: 150px;
-    }
-}
-
-@media (min-width: 2400px){
-    section.main-skills {
-        margin-left: 550px;
-    }
-}
-
-ul > section.lang-list {
-    font-size: 30px;
-    margin-bottom: 40px;
-    list-style: none;
+.main-skills {
     display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 900px;
+}
+
+/* ── Skill group ── */
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-group-label {
+    font-size: 13px;
+    font-family: "Bitcount", Arial, sans-serif;
+    letter-spacing: 3px;
+    color: #33cccc;
+    text-transform: uppercase;
+    margin: 0;
+    border-left: 2px solid #33cccc;
+    padding-left: 12px;
+}
+
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
 }
 
-@media (max-width: 500px){
-    ul > section.lang-list {
-        font-size: 40px;
-    }
-}
-
-img.lang-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
+/* ── Individual skill item ── */
+.lang-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skill-tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid #33cccc;
+    color: #00ffff;
+    font-size: 12px;
+    font-family: "Bitcount", Arial, sans-serif;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    transform: translateX(-50%) translateY(4px);
+}
+
+.lang-container:hover .skill-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ── All logos ── */
+.lang-logo,
+.git-logo,
+.vscode-logo,
+.docker-logo,
+.eclipse-logo,
+.intellij-logo,
+.react-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.lang-logo:hover,
+.git-logo:hover,
+.vscode-logo:hover,
+.docker-logo:hover,
+.eclipse-logo:hover,
+.intellij-logo:hover,
+.react-logo:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6));
+}
+
+.nodejs-logo {
+    width: 64px;
+    object-fit: contain;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.nodejs-logo:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6));
+}
+
+.kaplay-logo {
+    width: 48px;
+    object-fit: contain;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.kaplay-logo:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6));
 }
 
 @media (max-width: 500px) {
-    img.lang-logo {
-        width: 50px;
-
+    .lang-logo,
+    .git-logo,
+    .vscode-logo,
+    .docker-logo,
+    .eclipse-logo,
+    .intellij-logo,
+    .react-logo {
+        width: 48px;
+        height: 48px;
     }
-} 
-
-img.lang-logo:hover {
-    transform: scale(1.6);
-}
-
-div.lang-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    position: relative;
- }
-
-div.lang-container > p {
-    padding: 10px;
-    border: 3px white solid;
-    border-radius: 15px;
-    background: transparent;
-    position: absolute;
-    opacity: 0;
-    transition: 0.15s ease;
-    bottom: 100%; /* Position above the parent */
-    margin-bottom: 10px; /* Add some space between text and icon */
-    white-space: nowrap; /* Prevent text from wrapping */
-    transform: translateX(-50%);
-    left: 50%;
-}
-
-div.lang-container:hover > p {
-    opacity: 1;
-}
-
-ul > section.fram-list {
-    font-size: 30px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-@media (max-width: 500px){
-    ul > section.fram-list {
-        font-size: 40px;
-    }
-}
-
-ul > section.devtools-list {
-    font-size: 30px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-@media (max-width: 500px){
-    ul > section.devtools-list {
-        font-size: 40px;
-    }
-}
-
-img.git-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.git-logo {
-        width: 60px;
-    }
-}
-
-img.vscode-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.vscode-logo {
-        width: 60px;
-    }
-}
-
-img.docker-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.docker-logo {
-        width: 60px;
-    }
-}
-
-img.eclipse-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.eclipse-logo {
-        width: 60px;
-    }
-}
-
-img.intellij-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.intellij-logo {
-        width: 60px;
-    }
-}
-
-img.react-logo {
-    width: 40px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.react-logo {
-        width: 60px;
-    }
-}
-
-img.nodejs-logo {
-    width: 80px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.nodejs-logo {
-        width: 100px;
-    }
-}
-
-img.nodejs-logo:hover {
-    transform: scale(1.3);
-}
-
-img.kaplay-logo {
-    width: 60px;
-    transition: 0.15s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-@media (max-width: 500px){
-    img.kaplay-logo {
-        width: 80px;
-    }
-}
-
-img.kaplay-logo:hover {
-    transform: scale(1.3);
+    .nodejs-logo { width: 80px; }
+    .kaplay-logo { width: 60px; }
 }

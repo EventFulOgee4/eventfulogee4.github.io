@@ -1,84 +1,54 @@
 import "../styles/Skills.css"
 
-export default function Skills(props){
-    return(
+const langSkills = [
+    { name: "HTML", logo: "html-logo.svg", alt: "html-logo", cls: "lang-logo" },
+    { name: "CSS", logo: "css-logo.svg", alt: "css-logo", cls: "lang-logo" },
+    { name: "C++", logo: "cpp-logo.svg", alt: "c++-logo", cls: "lang-logo" },
+    { name: "JavaScript", logo: "javascript-logo.svg", alt: "js-logo", cls: "lang-logo" },
+    { name: "C", logo: "c-logo.svg", alt: "c-logo", cls: "lang-logo" },
+    { name: "Python", logo: "python-logo.svg", alt: "python-logo", cls: "lang-logo" },
+    { name: "Java", logo: "java-logo.svg", alt: "java-logo", cls: "lang-logo" },
+]
+
+const frameworkSkills = [
+    { name: "React", logo: "react-logo.svg", alt: "react-logo", cls: "react-logo" },
+    { name: "Node.js", logo: "nodejs-logo.svg", alt: "nodejs-logo", cls: "nodejs-logo" },
+    { name: "Kaplay", logo: "kaplay-logo.png", alt: "kaplay-logo", cls: "kaplay-logo" },
+]
+
+const devtoolSkills = [
+    { name: "Git", logo: "git-logo.svg", alt: "git-logo", cls: "git-logo" },
+    { name: "VS Code", logo: "vscode-logo.svg", alt: "vscode-logo", cls: "vscode-logo" },
+    { name: "Docker", logo: "docker-logo.svg", alt: "docker-logo", cls: "docker-logo" },
+    { name: "Eclipse", logo: "eclipse-logo.svg", alt: "eclipse-logo", cls: "eclipse-logo" },
+    { name: "IntelliJ", logo: "intellij-logo.svg", alt: "intellij-logo", cls: "intellij-logo" },
+]
+
+function SkillGroup({ title, skills }) {
+    return (
+        <div className="skill-group">
+            <p className="skill-group-label">{title}</p>
+            <div className="skill-row">
+                {skills.map((skill) => (
+                    <div key={skill.name} className="lang-container">
+                        <span className="skill-tooltip">{skill.name}</span>
+                        <img className={skill.cls} src={skill.logo} alt={skill.alt} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default function Skills(props) {
+    return (
         <section ref={props.skillsSection} className="skills-section">
-            <header className="section-header">
-                SKILLS
-            </header>
-            <section className="main-skills">
-                <ul>
-                    <section className="lang-list">
-                        <li>Languages: </li>
-                        <div className="lang-container">
-                            <p>HTML</p>
-                            <i><img className="lang-logo" src="html-logo.svg" alt="html-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>CSS</p>
-                            <i><img className="lang-logo" src="css-logo.svg" alt="css-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>C++</p>
-                            <i><img className="lang-logo" src="cpp-logo.svg" alt="c++-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>JAVASCRIPT</p>
-                            <i><img className="lang-logo" src="javascript-logo.svg" alt="js-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>C</p>
-                            <i><img className="lang-logo" src="c-logo.svg" alt="c-logo"/></i> 
-                        </div>
-                        <div className="lang-container">
-                            <p>PYTHON</p>
-                            <i><img className="lang-logo" src="python-logo.svg" alt="python-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>JAVA</p>
-                            <i><img className="lang-logo" src="java-logo.svg" alt="java-logo"/></i>
-                        </div>
-                    </section>
-                    <section className="fram-list">
-                        <li>Frameworks/Libraries: </li>
-                        <div className="lang-container">
-                            <p>REACT</p>
-                            <i><img className="react-logo" src="react-logo.svg" alt="react-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>NODE.JS</p>
-                            <i><img className="nodejs-logo" src="nodejs-logo.svg" alt="nodejs-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>KAPLAY</p>
-                            <i><img className="kaplay-logo" src="kaplay-logo.png" alt="kaplay-logo"/></i>
-                        </div>
-                    </section>
-                    <section className="devtools-list">
-                        <li>Developers Tools: </li>
-                        <div className="lang-container">
-                            <p>GIT</p>
-                            <i><img className="git-logo" src="git-logo.svg" alt="git-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>VSCODE</p>
-                            <i><img className="vscode-logo" src="vscode-logo.svg" alt="vscode-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>DOCKER</p>
-                            <i><img className="docker-logo" src="docker-logo.svg" alt="docker-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>ECLIPSE</p>
-                            <i><img className="eclipse-logo" src="eclipse-logo.svg" alt="eclipse-logo"/></i>
-                        </div>
-                        <div className="lang-container">
-                            <p>INTELLIJ</p>
-                            <i><img className="intellij-logo" src="intellij-logo.svg" alt="intellij-logo"/></i>
-                        </div>
-                    </section>
-                </ul>
-            </section>
+            <header className="section-header">SKILLS</header>
+            <div className="main-skills">
+                <SkillGroup title="Languages" skills={langSkills} />
+                <SkillGroup title="Frameworks & Libraries" skills={frameworkSkills} />
+                <SkillGroup title="Developer Tools" skills={devtoolSkills} />
+            </div>
         </section>
     )
 }
