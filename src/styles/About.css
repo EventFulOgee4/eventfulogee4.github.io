@@ -1,72 +1,52 @@
 section.about-section {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0 clamp(24px, 6vw, 80px);
+    box-sizing: border-box;
 }
 
+/* ── Section header — shared across all sections ── */
 header.section-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 27px;
-    margin: 0 auto;
-    width: 80%;
-    border: 3px black solid;
-    border-radius: 15px;
-    background-color: aliceblue;
-    color: #1a1a1a;
-    font-size: 20px;
-    margin-bottom: 80px;
-}
-
-@media (max-width: 500px){
-    header.section-header {
-        width: 700px;
-        margin-left: 80px;
-    }
+    padding: 14px 32px;
+    width: fit-content;
+    margin: 0 auto 60px auto;
+    border: 1.5px solid #33cccc;
+    border-radius: 10px;
+    background: rgba(0, 255, 255, 0.05);
+    color: #00ffff;
+    font-size: 18px;
+    font-family: "Bitcount", Arial, sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1), inset 0 0 12px rgba(0, 255, 255, 0.03);
 }
 
 section.main-about {
-    margin-left: 180px;
-}
-
-@media (min-width: 2400px){
-    section.main-about{
-        margin-left: 600px;
-    }
-}
-
-@media (max-width: 500px){
-    section.main-about{
-        min-width: 400px;
-        margin-left: 250px;
-    }
+    max-width: 800px;
 }
 
 section.main-about > h2 {
     font-family: "Bitcount Prop Single", system-ui;
-    font-size: 30px;
-}
-
-@media (max-width: 500px){
-    section.main-about > h2{
-        font-size: 40px;
-    }
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 24px;
+    color: #fff;
 }
 
 section.main-about > h3 {
     font-family: "Bitcount Prop Single", system-ui;
-    font-size: 20px;
-    max-width: 1000px;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    font-weight: normal;
+    max-width: 720px;
     display: flex;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 500px){
-    section.main-about > h3{
-        font-size: 30px;
-    }
+    flex-direction: column;
+    gap: 16px;
+    line-height: 1.75;
+    color: rgba(220, 220, 220, 0.9);
 }
 
 section.main-about > h3 > span {
-    margin-bottom: 15px;
+    display: block;
 }
