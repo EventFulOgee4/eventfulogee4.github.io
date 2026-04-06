@@ -10,7 +10,7 @@ export default function Education(props) {
                         <h2 className="education-uni">University of Calgary</h2>
                         <h3 className="education-degree">Bachelor of Science — Computer Science</h3>
                     </div>
-                    <span className="education-date">2023 – 2028</span>
+                    <span className="education-date">2024 – 2028</span>
                 </div>
                 <div className="education-details">
                     <div className="education-detail-item">
